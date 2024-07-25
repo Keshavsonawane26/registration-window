@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="a1.css">
+</head>
+<body>
+   
+  <div class="container">
+    <img src="mit.png" alt="logo" class="top-left">
+    <div class="formbox">
+      <h1 id="title">Signup</h1>
+      <form onsubmit="return validateEmail()">
+        <div class="input-group">  
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email-id </label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="dob">DOB </label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+          <span id="phoneError" class="error-message"></span>
+
+          <label for="state">Select state</label> 
+          <select id="state" name="state" required>
+            <option value=""></option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Gujrat">Gujrat</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Goa">Goa</option>
+          </select>
+
+          <label for="program">Select Program Applying for</label>
+          <select id="program" name="program" required>
+            <option value=""></option>
+            <option value="Btech">Btech</option>
+            <option value="BBA">BBA</option>
+            <option value="MBA">MBA</option>
+            <option value="Pharmacy">Pharmacy</option>
+          </select>
+        </div>
+        <div class="btn-field">
+            <button type="button" id="signupbtn">Signup</button>
+            <button type="button" id="loginbtn" class="disable">Login</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <script src="a1.js"></script>
+</body>
+</html>
